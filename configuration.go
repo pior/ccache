@@ -97,7 +97,7 @@ func (c *Configuration[T]) Track() *Configuration[T] {
 	return c
 }
 
-// OnDelete allows setting a callback function to react to ideam deletion.
+// OnDelete allows setting a callback function to react to item deletion.
 // This typically allows to do a cleanup of resources, such as calling a Close() on
 // cached object that require some kind of tear-down.
 func (c *Configuration[T]) OnDelete(callback func(item *Item[T])) *Configuration[T] {
